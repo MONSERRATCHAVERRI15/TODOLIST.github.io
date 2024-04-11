@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="Todo List App.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Título de la lista -->
+        <h1>Todo List</h1>
+        <!-- Contenedor para el campo de entrada y el botón de añadir tarea -->
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Enter task...">
+            <button id="addTaskButton">Add Task</button>
+        </div>
+        <!-- Tabla para mostrar las tareas -->
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Tarea</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <!-- Cuerpo de la tabla para tareas activas -->
+            <tbody id="tasksBody"></tbody>
+            <!-- Cuerpo de la tabla para tareas completadas -->
+            <tbody id="completedTasksBody"></tbody>
+        </table>
+    </div>
+    <!-- Script para la lógica de la aplicación -->
+    <script src="Todo List App.js"></script>
+</body>
+</html>

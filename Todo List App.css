@@ -1,0 +1,75 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Fuente para el texto */
+    margin: 0; /* Sin margen alrededor del cuerpo */
+    padding: 20px; /* Espaciado interno del cuerpo */
+    background-image: url('img1.gif'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    display: flex; /* Usa flexbox para alinear contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* Altura mínima de la ventana del navegador */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    width: 500px; /* Ancho fijo del contenedor */
+    padding: 30px; /* Espaciado interno del contenedor */
+    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo translúcido para el recuadro */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilos para el título */
+h1 {
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilos para el contenedor del campo de entrada y el botón */
+.input-container {
+    display: flex; /* Usa flexbox para alinear contenido */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilos para el campo de entrada de texto */
+.input-container input[type="text"] {
+    flex: 1; /* Ocupa el espacio disponible */
+    padding: 5px; /* Espaciado interno */
+    margin-right: 10px; /* Espacio derecho */
+}
+
+/* Estilos para el botón de añadir tarea */
+.input-container button {
+    padding: 5px 10px; /* Espaciado interno */
+    background-color: #f44336; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 3px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor apuntador */
+}
+
+/* Estilos para el botón de añadir tarea al pasar el mouse */
+.input-container button:hover {
+    background-color: #d32f2f; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes de la tabla */
+}
+
+/* Estilos para las celdas de encabezado y de datos */
+table th, table td {
+    padding: 8px; /* Espaciado interno */
+    border-bottom: 1px solid #ddd; /* Borde inferior */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+/* Estilos para las tareas completadas */
+.completed {
+    text-decoration: line-through; /* Tachado del texto */
+    color: #aaa; /* Color del texto */
+}
